@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop class="backgroundVideo">
+        <source src="media/body/fondo.mp4" type="video/mp4">
+    </video>
+    <header>
+        <img id="header-image" src="media/body/header2.png">
+    </header>
+    <main>
+        <script src="https://luke-chang.github.io/js-spatial-navigation/spatial_navigation.js"></script>
+        <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+        <div id="avatar-container" class="hide">
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Kirby.png" name="Kirby" class="avatar" alt="Avatar 1" data-avatar="media/nintendo/os/user date/Kirby.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Peach.png" name="Peach" class="avatar" alt="Avatar 2" data-avatar="media/nintendo/os/user date/Peach.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Mario.png" name="Mario" class="avatar" alt="Avatar 3" data-avatar="media/nintendo/os/user date/Mario.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Pit.png" name="Pit" class="avatar" alt="Avatar 4" data-avatar="media/nintendo/os/user date/pit.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Sony.png" name="Sony" class="avatar" alt="Avatar 5" data-avatar="media/nintendo/os/user date/Sony.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/marth.png" name="Marth" class="avatar" alt="Avatar 6" data-avatar="media/nintendo/os/user date/marth.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/link.png" name="Link" class="avatar" alt="Avatar 7" data-avatar="media/nintendo/os/user date/Link.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Bowser.png" name="Bowser" class="avatar" alt="Avatar 8" data-avatar="media/nintendo/os/user date/bowser.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/samus.png" name="Samus" class="avatar" alt="Avatar 9" data-avatar="media/nintendo/os/user date/samus.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/pikachu.png" name="Pikachu" class="avatar" alt="Avatar 10" data-avatar="media/nintendo/os/user date/pikachu.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Yoshi.png" name="Yoshi" class="avatar" alt="Avatar 11" data-avatar="media/nintendo/os/user date/Yoshi.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Mega man.png" name="Mega Man" class="avatar" alt="Avatar 12" data-avatar="media/nintendo/os/user date/mega man.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/pac-man.png" name="Pac-Man" class="avatar" alt="Avatar 13" data-avatar="media/nintendo/os/user date/pac-man.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/luigi.png" name="Luigi" class="avatar" alt="Avatar 14" data-avatar="media/nintendo/os/user date/luigi.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/fox.png" name="Fox" class="avatar" alt="Avatar 15" data-avatar="media/nintendo/os/user date/fox.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/donkey-Kong.png" name="Donkey Kong" class="avatar" alt="Avatar 16" data-avatar="media/nintendo/os/user date/donkey-Kong.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/rob.png" name="R.O.B." class="avatar" alt="Avatar 17" data-avatar="media/nintendo/os/user date/rob.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/jigglypuff.png" name="Jigglypuff" class="avatar" alt="Avatar 18" data-avatar="media/nintendo/os/user date/jigglypuff.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/olimar.png" name="Olimar" class="avatar" alt="Avatar 19" data-avatar="media/nintendo/os/user date/olimar.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/warrior.png" name="Warrior" class="avatar" alt="Avatar 20" data-avatar="media/nintendo/os/user date/warrior.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Captain-Falcon.png" name="Captain Falcon" class="avatar" alt="Avatar 21" data-avatar="media/nintendo/os/user date/captain-Falcon.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/dr-mario.png" name="Dr. Mario" class="avatar" alt="Avatar 22" data-avatar="media/nintendo/os/user date/dr-mario.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/meta-knight.png" name="Meta Knight" class="avatar" alt="Avatar 23" data-avatar="media/nintendo/os/user date/meta-knight.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/Falco.png" name="Falco" class="avatar" alt="Avatar 24" data-avatar="media/nintendo/os/user date/Falco.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/mr-game&watch.png" name="Mr. Game & Watch" class="avatar" alt="Avatar 25" data-avatar="media/nintendo/os/user date/mr-game&watch.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/bowsy.png" name="Bowsy" class="avatar" alt="Avatar 26" data-avatar="media/nintendo/os/user date/bowsy.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/lucario.png" name="Lucario" class="avatar" alt="Avatar 27" data-avatar="media/nintendo/os/user date/lucario.png">
+                <div class="avatar-name"></div>
+            </div>
+            <div class="avatar-item">
+                <img src="media/nintendo/os/user date/toon-link.png" name="Toon Link" class="avatar" alt="Avatar 28" data-avatar="media/nintendo/os/user date/toon-link.png">
+                <div class="avatar-name"></div>
+            </div>
+            <!-- Más avatares aquí -->
+        </div>
+        
+        
+        <div id="selected-avatar-name" class="avatar-name"></div>
+        <div id="overlay" class="overlay"></div>
+        <div id="create-user-modal" class="create-modal">
+            <h1>Welcome</h1>
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required maxlength="18" minlength="3">
+            <label for="avatar">Select an avatar:</label>
+            <div id="create-avatar-selection" class="avatar-selection">
+            </div>
+            
+            <button id="submit-user">Create</button>
+        </div>
+        
+        <div class="nintendo-switch">
+            <img src="media/nintendo/nintendoNUEVO.png" alt="Nintendo Switch" class="nintendo-image">
+            <div class="buttons">
+                <div id="left-buttons">
+                    <button class="control-button up"></button>
+                    <button class="control-button left"></button>
+                    <button class="control-button right"></button>
+                    <button class="control-button down"></button>
+                    <button class="volume-control minus"></button>
+                    <button class="control-button start"></button>
+                </div>
+                <div id="right-buttons">
+                    <button class="control-button X"></button>
+                    <button class="control-button Y"></button>
+                    <button class="control-button A"></button>
+                    <button class="control-button B"></button>
+                    <button class="control-button pause"></button>
+                    <button class="volume-control plus">+</button>
+                </div>
+            </div>
+            <div class="joystick left-joystick"></div>
+            <div class="joystick right-joystick"></div>
+            <div class="screen">
+                <img id="screen-image" src="media/nintendo/os/home1.gif" alt="Pantalla del Nintendo Switch">
+                <div class="volume-bar" id="volume-bar">
+                    <div class="volume-progress" id="volume-progress"></div>
+                </div>
+                <div class="notification-bar">
+                    <div id="user-info" class="user-info"></div>
+                        <span></span>
+                    <img class="mute-image" src="media/nintendo/os/mute.png"  >
+                    <div id="nintendo-time" class="nintendo-time"></div>
+                    <div class="signal-icon">
+                        <div class="signal-bars" id="signal-bars">
+                        <div class="bar" id="bar-1"></div>
+                        <div class="bar" id="bar-2"></div>
+                        <div class="bar" id="bar-3"></div>
+                        </div>
+                    </div>
+                    <img id="battery-image" src="media/nintendo/os/battery-bar.png">
+                </div>
+                <div class="menu-container hide" id="menu-container">
+                    <div class="menu-background"></div>
+                    <div class="menu-options">
+                        <div class="menu-row">
+                            <div class="menu-option" data-section="option1">
+                                <img src="media/nintendo/os/bowser.gif" alt="Opción 1" data-action="showOpcion1" data-index="0">
+                                <span>Projects</span>
+                            </div>
+                            <div class="menu-option" data-section="option2">
+                                <img src="media/nintendo/os/change-power-up-mario.gif" alt="Opción 2" data-action="showOpcion2" data-index="1">
+                                <span>Resume</span>
+                            </div>
+                            <div class="menu-option" data-section="option3">
+                                <img src="media/nintendo/os/start.gif" alt="Opción 3" data-action="showOpcion3" data-index="2">
+                                <span>Certificates</span>
+                            </div>
+                        </div>
+                        <div class="menu-row">
+                            <div class="menu-option" data-section="option4">
+                                <img src="media/nintendo/os/start1.gif" alt="Opción 4" data-action="showOpcion4" data-index="3">
+                                <span>Tests</span>
+                            </div>
+                            <div class="menu-option" data-section="option5">
+                                <img src="media/nintendo/os/coin.gif" alt="Opción 5" data-action="showOpcion5" data-index="4">
+                                <span>Contact</span>
+                            </div>
+                            <div class="menu-option" data-section="option6">
+                                <img src="media/nintendo/os/coin.gif" alt="Opción 6" data-action="showOpcion6" data-index="5">
+                                <span>Options</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content option1 hide" id="content-option1">
+                    <div id="content-projects">
+                        <div class="project-folders">
+                            <h2 class="project-title">My Projects</h2>
+                            <div class="folder" data-index="1" onclick="toggleFolder(1)">
+                                <img src="media/nintendo/os/Projets/postman.png" alt="Proyecto 1">
+                                <span>Api</span>
+                            </div>
+                            <div class="folder" data-index="2" onclick="toggleFolder(2)">
+                                <img src="media/nintendo/os/Projets/testCases.png" alt="Proyecto 2">
+                                <span>Test Cases</span>
+                            </div>
+                            <div class="folder" data-index="3" onclick="toggleFolder(3)">
+                                <img src="media/nintendo/os/coin.gif" alt="Proyecto 3">
+                                <span>Selenium</span>
+                            </div>
+                            <div class="folder"data-index="4" onclick="toggleFolder(4)">
+                                <img src="media/nintendo/os/coin.gif" alt="Proyecto 4">
+                                <span></span>
+                            </div>
+                            <div class="folder"data-index="5" onclick="toggleFolder(5)">
+                                <img src="media/nintendo/os/coin.gif" alt="Proyecto 5">
+                            </div>
+                        </div>
+                        <div id="project-content-1" class="project-content hide" data-index="0">
+                            <div id="projects-content">
+                                <h2 class="projects-title">APi Testing</h2>
+                                <div>
+                                    <span>Descripción del Proyecto 1...</span>
+                                </div>
+                                <div>
+                                    <span>Descripción del Proyecto 2...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="project-content-2" class="project-content hide" data-index="1">
+                            <div id="projects-content">
+                                <h2 class="projects-title">Test Cases</h2>
+                                <span>Descripción de los Proyectos de Casos de Prueba...</span>
+
+                            </div>
+                        </div>
+                        <div id="project-content-3" class="project-content hide" data-index="2">
+                            <div id="projects-content">
+                                <h2 class="projects-title">Automation Testing</h2>
+                                <span >Descripción del Proyecto 3...</span>
+
+                            </div>
+                        </div>
+                        <div id="project-content-4" class="project-content hide">
+                            <h2 class="projects-title">prueba de palabras</h2>>
+                            <span>Descripción del Proyecto 4...</span>
+
+                        </div>
+                        <div id="project-content-5" class="project-content hide">
+                            <h2 class="projects-title">Done</h2>
+                            <h2>Done Projects</h2>
+                            <span>Descripción del Proyecto 5...</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="content option2 hide" id="content-option2">
+                    <div id="resume-content">
+                        <div class="card-container">
+                            <div class="card" data-index="1">Resume</div>
+                            <div class="card" data-index="2">Historial Academico</div>
+                            <div class="card" data-index="3">Historial Laboral</div>
+                            <div class="card" data-index="4">Tools & Tech's</div>
+                            <div class="card" data-index="5">Tecnical Skills</div>
+                            <div class="card" data-index="6">Soft Skills</div>
+                        </div>
+                        <div class="text-container">
+                            <div class="text left-text" data-index="0">Left Text for Card 1</div>
+                            <div class="text center-text" data-index="0">Center Text for Card 1</div>
+                            <div class="text right-text" data-index="0">Right Text for Card 1</div>
+                            <div class="text left-text" data-index="1">Left Text for Card 2</div>
+                            <div class="text center-text" data-index="1">Center Text for Card 2</div>
+                            <div class="text right-text" data-index="1">Right Text for Card 2</div>
+                            <div class="text left-text" data-index="2">Left Text for Card 3</div>
+                            <div class="text center-text" data-index="2">Center Text for Card 3</div>
+                            <div class="text right-text" data-index="2">Right Text for Card 3</div>
+                            <div class="text left-text" data-index="3">Left Text for Card 4</div>
+                            <div class="text center-text" data-index="3">Center Text for Card 4</div>
+                            <div class="text right-text" data-index="3">Right Text for Card 4</div>
+                            <div class="text left-text" data-index="4">Left Text for Card 5</div>
+                            <div class="text center-text" data-index="4">Center Text for Card 5</div>
+                            <div class="text right-text" data-index="4">Right Text for Card 6</div>
+                            <div class="text left-text" data-index="5">Left Text for Card 7</div>
+                            <div class="text center-text" data-index="5">Center Text for Card 7</div>
+                            <div class="text right-text" data-index="5">Right Text for Card 7</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="content option3 hide" id="content-option3">
+                    <div class="carousel">
+                        <div class="carousel-images">
+                            <img src="media/nintendo/os/Certificates/certificateTest2.png" class="carousel-image" alt="prev Certificado 1" data-index="0" data-section="content-section-0">
+                            <div class="content hide" id="content-section-0">
+                                <img src="media/nintendo/os/Certificates/certificateTest2.png" class="certificado">
+                                <div class="data-certificado">
+                                    <h2>Google IT Automation with Python</h2>
+                                    <a href="https://www.linkedin.com/in/andres-e-blanco/">More Info</a>
+                                </div>
+                            </div>
+                            <img src="media/nintendo/os/Certificates/certificateTest3.png" class="carousel-image" alt="prev Certificado 2" data-index="1" data-section="content-section-1">
+                                <div class="content hide" id="content-section-1">
+                                    <img src="media/nintendo/os/Certificates/certificateTest3.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 2</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la segunda imagen.</span>
+                                    </div>
+                                </div>
+                            <img src="media/nintendo/os/Certificates/atlassianTest.png" class="carousel-image" alt="prev Certificado 3" data-index="2" data-section="content-section-2">
+                                <div class="content hide" id="content-section-2">
+                                    <img src="media/nintendo/os/Certificates/atlassianTest.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 3</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la tercera imagen.</span>
+                                    </div>
+                                </div>
+                            <img src="media/nintendo/os/Certificates/atlassianTest1.png" class="carousel-image" alt="prev Certificado 4" data-index="3" data-section="content-section-3">
+                                <div class="content hide" id="content-section-3">
+                                    <img src="media/nintendo/os/Certificates/atlassianTest1.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 4</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la cuarto imagen.</span>
+                                    </div>
+                                </div>
+                            <img src="media/nintendo/os/Certificates/AutomationTest2.png" class="carousel-image" alt="prev Certificado 5" data-index="4" data-section="content-section-4">
+                                <div class="content hide" id="content-section-4">
+                                    <img src="media/nintendo/os/Certificates/AutomationTest2.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 5</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la quinta imagen.</span>
+                                    </div>
+                                </div>
+                            <img src="media/nintendo/os/Certificates/TesterQA.png" class="carousel-image" alt="prev Certificado 6" data-index="5" data-section="content-section-5">
+                                <div class="content hide" id="content-section-5">
+                                    <img src="media/nintendo/os/Certificates/TesterQA.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 6</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la sexta imagen.</span>
+                                    </div>
+                                </div>
+                            <img src="media/nintendo/os/Certificates/ScrumC.png" class="carousel-image" alt="prev Certificado 7" data-index="6" data-section="content-section-6">
+                                <div class="content hide" id="content-section-6">
+                                    <img src="media/nintendo/os/Certificates/ScrumC.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 7</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la septima imagen.</span>
+                                    </div>
+                                </div>
+                            <img src="media/nintendo/os/Certificates/w&mSelenium.png" class="carousel-image" alt="prev Certificado 8" data-index="7" data-section="content-section-7">
+                                <div class="content hide" id="content-section-7">
+                                    <img src="media/nintendo/os/Certificates/w&mSelenium.png" class="certificado">
+                                    <div class="data-certificado">
+                                        <h2>Certificado 8</h2>
+                                        <span>Este es el contenido que se mostrará cuando se haga clic en la octava imagen.</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content option4 hide" id="content-option4">
+                    <div id="report-menu" class="report-buttons">
+                        <h2>Reports & Suggests</h2>
+                        <button id="report-button" class="menu-button" data-form="form-reports">
+                            <img src="media/nintendo/os/bugReport.png" alt="Bug Report Icon">
+                            Reports
+                        </button>
+                        <button id="suggest-button" class="menu-button" data-form="form-suggests">
+                            <img src="media/nintendo/os/light bulb1.gif" alt="Suggest Icon">
+                            Suggests
+                        </button>
+                    </div>
+                    <div id="form-reports" class="form-container hide" data-index="2">
+                        <h1>Report Issue</h1>
+                        <form id="report-form" class="report-form">
+                            <div class="column">
+                                <label for="report-name">Report name:</label>
+                                <input type="text" id="report-name" name="name" placeholder="Example: 'Error when trying to open a contact option.'" data-index="3" required maxlength="48">
+                                <label for="report-email">Email:</label>
+                                <input type="email" id="report-email" name="email" placeholder="Your Email" data-index="4" required maxlength="45">
+                                <label for="report-device">Device:</label>
+                                <input type="text" id="report-device" name="device" placeholder="Example: 'Iphone 15 XS'" data-index="5" maxlength="45">
+                                <label for="report-browser">Browser:</label>
+                                <input type="text" id="report-browser" name="browser" placeholder="Example: 'Google Chrome, build 127.0.6'" data-index="6" maxlength="45">
+                            </div>
+                            <div class="column">
+                                <label>Relevance:</label>
+                                <div class="relevance-buttons">
+                                    <button type="button" class="relevance-button" data-index="7" data-value="1">Low</button>
+                                    <button type="button" class="relevance-button" data-index="8" data-value="2">Medium</button>
+                                    <button type="button" class="relevance-button" data-index="9" data-value="3">Critical</button>
+                                </div>
+                                <input type="hidden" id="report-relevance" name="relevance">
+                                <label for="report-steps">Steps to Reproduce:</label>
+                                <textarea id="report-steps" name="steps" placeholder="Describe the steps to reproduce the issue" data-index="10" maxlength="450"></textarea >
+                                <label for="report-image">Add Images:</label>
+                                <input type="file" id="report-image" name="image" data-index="11">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="form-suggests" class="form-container hide" data-index="3">
+                        <h1>Suggestions</h1>
+                        <form id="suggest-form">
+                            <div class="column">
+                                <label for="suggest-name">Name:</label>
+                                <input type="text" id="suggest-name" name="name" placeholder="Your Name" data-index="10" required>
+                                <label for="suggest-email">Email (optional):</label>
+                                <input type="email" id="suggest-email" name="email" placeholder="Your Email" data-index="11">
+                            </div>
+                            <div class="column">
+                                <label for="suggest-rating">Rating:</label>
+                                <label for="satisfaction">Satisfaction:</label>
+                                    <div class="satisfaction" >
+                                        <label><input type="radio" name="satisfaction" value="1" data-index="12">1</label>
+                                        <label><input type="radio" name="satisfaction" value="2" data-index="13">2</label>
+                                        <label><input type="radio" name="satisfaction" value="3" data-index="14">3</label>
+                                        <label><input type="radio" name="satisfaction" value="4" data-index="15">4</label>
+                                        <label><input type="radio" name="satisfaction" value="5" data-index="16">5</label>
+                                    </div>
+                                <label for="suggest-comment">Suggestion:</label>
+                                <textarea id="suggest-comment" name="comment" placeholder="Your Suggestion" data-index="17"></textarea required>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="confirmation-dialog" class="confirmation-dialog hide">
+                        <p>¿Confirmar el envío del formulario?</p>
+                        <button id="confirm-button" data-index="1">Confirm</button>
+                        <button id="back-button" data-index="2">Back to the form?</button>
+                    </div>
+                    <div id="success-message" class="success-message hide">
+                        <p>Your data was send, Thank you</p>
+                    </div>
+                </div>
+                <div class="content option5 hide" id="content-option5">
+                    <div class="contact-list">
+                        <h1>Contact Info</h1>
+                        <div class="contact-item" data-index="0">
+                            <img src="media/nintendo/os/cubo.gif" alt="Contact 1">
+                            <span>Mails</span>
+                            <div class="contact-info hide" data-index="0">
+                                <h2>Mails</h2>
+                                <ul class="email-options">
+                                    <li>
+                                        <a data-index="1" href="https://mail.google.com/mail/?view=cm&to=andreesb95@gmail.com&subject=Asunto%20del%20correo&body=Cuerpo%20del%20mensaje">
+                                        <img src="media/nintendo/os/coin.gif" alt="Gmail"></a>
+                                    </li>
+                                    <li>
+                                        <a data-index="2" href="https://outlook.live.com/owa/?to=andreesb95@gmail.com&subject=Asunto%20del%correo&body=Cuerpo%20del%mensaje">
+                                        <img src="media/nintendo/os/coin.gif" alt="Outlook"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-index="1" data-url="https://www.linkedin.com/in/andres-e-blanco/">
+                            <img src="media/nintendo/os/cubo.gif" alt="Contact 2">
+                            <span>LinkedIn</span>
+                            <div class="contact-info hide" data-index="1">
+                                <h2>Contact 2</h2>
+                                <p>Details about Contact 2...</p>
+                                <a href="https://www.linkedin.com/in/andres-e-blanco/">More info</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-index="2" data-url="https://github.com/Andreesb/">
+                            <img src="media/nintendo/os/cubo.gif" alt="Contact 3">
+                            <span>GitHub</span>
+                            <div class="contact-info hide" data-index="2">
+                                <h2>Contact 3</h2>
+                                <p>Details about Contact 3...</p>
+                                <a href="https://github.com/Andreesb/">More info</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-index="3" data-url="https://join.slack.com/t/theworkspace-wsx1629/shared_invite/zt-2op03e0g7-7zvztZw6Nf8TQ0J5zZxzxg">
+                            <img src="media/nintendo/os/cubo.gif" alt="Contact 4">
+                            <span>Slack</span>
+                            <div class="contact-info hide" data-index="3">
+                                <h2>Contact 4</h2>
+                                <p>Details about Contact 4...</p>
+                                <a href="https://join.slack.com/t/theworkspace-wsx1629/shared_invite/zt-2op03e0g7-7zvztZw6Nf8TQ0J5zZxzxg">More info</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-index="4" data-url="https://www.google.com/">
+                            <img src="media/nintendo/os/cubo.gif" alt="Contact 5">
+                            <span>Discord</span>
+                            <div class="contact-info hide" data-index="4">
+                                <h2>Contact 5</h2>
+                                <p>Details about Contact 5...</p>
+                                <a href="https://www.google.com/">More info</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-index="5" data-url="https://www.google.com/">
+                            <img src="media/nintendo/os/cubo.gif" alt="Contact 6">
+                            <span>Coffe!</span>
+                            <div class="contact-info hide" data-index="5">
+                                <h2>Contact 6</h2>
+                                <p>Details about Contact 6...</p>
+                                <a href="https://www.google.com/">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content option6 hide" id="content-option6">
+                    <span>Options</span>
+                        <ul class="settings-list ">
+                            <li class="setting-option" data-action="openUserModal">
+                                <img src="media/nintendo/os/coin.gif" alt="Configurar Usuario" >
+                                <span>Configurar Usuario</span>
+                            </li>
+                        <li class="setting-option">
+                            <img src="media/nintendo/os/coin.gif" alt="Sonido">
+                            <span>Ajustes de Sonido</span>
+                        </li>
+                        <li class="setting-option">
+                            <img src="media/nintendo/os/coin.gif" alt="Pantalla">
+                            <span>Ajustes de Pantalla</span>
+                        </li>
+                        <li class="setting-option">
+                            <img src="media/nintendo/os/coin.gif" alt="Red">
+                            <span>Ajustes de Red</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Modal para editar usuario -->
+                <div id="edit-user-modal" class="edit-modal hide">
+                    <h2>Seleccione un avatar:</h2>
+                    <label for="edit-username">Nombre:</label>
+                    <input type="text" id="edit-username" index="1"  required maxlength="18" minlength="3">
+                    <div id="edit-avatar-selection" index ="2" class="avatar-selection">
+                        
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+                
+    </main>
+    <audio id="background-music" src="media/body/oriental.mp3" autoplay loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
